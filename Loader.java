@@ -15,11 +15,11 @@ public class Loader {
 				int inp = input.nextInt(16);
 				if(inp == -1) inCode = false;
 				else if(inCode){
-					int arg = input.nextInt();
+					int arg = input.nextInt(16);
 					code.setCode(inp, arg);
 				}
 				else {
-					int val = input.nextInt();
+					int val = input.nextInt(16);
 					mem.setData(inp, val);
 				}
 			}

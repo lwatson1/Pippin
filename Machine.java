@@ -555,7 +555,7 @@ public class Machine extends Observable {
 		codeViewPanel = new CodeViewPanel(this);
         memoryViewPanel1 = new MemoryViewPanel(this, 0, 160);
         memoryViewPanel2 = new MemoryViewPanel(this, 160, 240);
-        memoryViewPanel3 = new MemoryViewPanel(this, 240, Code.CODE_MAX);
+        memoryViewPanel3 = new MemoryViewPanel(this, 240, Code.CODE_MAX); //Memory.DATA_SIZE
         controlPanel = new ControlPanel(this);
         processorPanel = new ProcessorViewPanel(this);
         frame = new JFrame("Pippin Simulator");
